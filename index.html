@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+    <nav id = "MenuTop" >
+        <a id = "LogoInicio" onclick = "iniciarPrincipal( event )" >
+            <svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+        <ul id = "listamenu">
+            <li id = "Historia" class = "pseudobotonesMenu" onclick = "iniciarHistoria( event )" >
+                HISTORIA
+            </li>
+            <li id = "Juguemos" class = "pseudobotonesMenu" onclick = "iniciarJuego( event )" >
+                JUGUEMOS
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id = "imagenfondo">
+            <h1 id = "HeaderTitulo1" class = "Titulos" >PROGRAMACION E HISTORIA</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <section id = "Principal" >
+                <h2>CONTENIDO</h2>
+                <div id = "CardPrincipal">
+                    <div id = "IrHistoria" class = "cards" >
+                        <img class = "imagenPrincipal" src= "./imagenes/img1.jpg" alt = "historia de la programación">
+                        <p class="desc-card">Conozcamos Un poco sobre la historia de la programación</p>
+                        <button type="button" class = "botonPrincipal" onclick = "iniciarHistoria( event )" >Ir a Historia</button>
+                    </div>
+                    <div id = "IrJuego" class = "cards" >
+                        <img class = "imagenPrincipal" src = "./imagenes/img2.jpg" alt="Juguemos un poco">
+                        <p class="desc-card">Juguemos un poco sobre la computación</p>
+                        <button type="button" class = "botonPrincipal" onclick = "iniciarJuego( event )" >Ir a juego</button>
+                    </div>
+                </div>    
+            </section>
+            <div id = "CardHistoria" >
+                <div id = "parrafo1" class = "parrafos" >
+                    <h2>El principio de la historia de la programación</h2>
+                    <p>
+                        El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.
+                    </p>
+                </div>
+                <div id = "parrafo2" class = "parrafos" >
+                    <p>
+                        Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+                        Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.
+                    </p>
+                    <h2>Lenguaje de ensamblaje</h2>
+                </div>
+                <div id = "parrafo3" class = "parrafos" >
+                    <h2>Los primeros lenguajes de programación</h2>
+                    <div >
+                        <p>
+                            FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas. A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.
+                        </p>
+                        <p>
+                            En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas automatizados y señales de tráfico.
+                            El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje familiar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense
+                        </p>
+                        <p>
+                            En 1964 se creo Basic, que fue diseñado como un lenguaje simplificado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
+                        </p>
+                        <p>
+                            Entre 1969 y 1973 se crea C, a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».
+                        </p>
+                        <p>
+                            En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
+                            Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar a los lenguajes de hoy en día.
+                        </p>
+                    </div>
+                </div>
+                <div id = "reproductor">
+                    <h2 id = "tituloVideo" class = "tituloSeccion" >Un breve video para complementar lo visto</h2>
+                    <div id = "frameVideo">
+                        <img id = "imagen-video" src = "./imagenes/img-video.jpg">
+                        <video id = "medio" width="100%" muted="none">Su navegador no soporta el formato de video
+                            <source src = "./video/historia-Comp.mp4">
+                            <source src = "./video/historia-Comp.ogv">
+                        </video>
+                    </div>
+                    <nav id = "controlesVideo" >
+                        <div id = "botones">
+                            <button id="reproducir" class = "botonvideo" >></button>
+                            <button id="pausar" class = "botonvideo" >||</button>
+                            <button id="silenciar" class = "botonvideo" >Sonido</button>
+                        </div>
+                        <div id = "barra">
+                            <div id = "progreso">
+                            </div>
+                        </div>
+                        <div id = "controlyTiempo" " >
+                            <div id = "tiempototal">
+                                Duracion video:
+                            </div>
+                            <div id = "control">
+                                <input type = "range" id = "volumen" min="0" max="1" step="0.1" value="0.8">
+                            </div>
+                        </div>
+                    </nav>
+                </div> 
+            </div>
+            <div id = "CardJuego">
+                <h2 id = "tituloJuego" class = "tituloSeccion" >Armemos el rompecabezas y veamos que imagen es ...</h2>
+                <div id = "Rompezabezas" >
+                    <div id = "cajas" >
+                        <div id = "caja1" class = "caja" ondrop = "dropImg( event )" ondragover = "allowDropImg( event )" >
+                        </div>
+                        <div id = "caja2" class = "caja" ondrop = "dropImg( event )" ondragover = "allowDropImg( event )" >
+                        </div>
+                        <div id = "caja3" class = "caja" ondrop = "dropImg( event )" ondragover = "allowDropImg( event )" >
+                        </div>
+                    </div>
+                    <div id = "imagenes" >
+                        <div id = "img1" class = "caja" >
+                            <!-- 
+                            <img id = "imagen1" src = "./imagenes/rompe2.png" alt = "imagen-rompecabezas" draggable = "true" ondragstart = "dragImg( event )" >
+                            -->
+                        </div>
+                        <div id = "img2" class = "caja" >
+                        </div>
+                        <div id = "img3" class = "caja" >
+                        </div>
+                    </div>
+                </div>
+                <button class = "botonvideo" onclick = "reiniciarRompecabezas( event )" >Reiniciar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id = "FooterLadoIzquierdo">
+            <img id = "Footerlogo" src="./imagenes/logo.png" alt = "Footerlogo">
+            <h3 id = "titulo-pie">PROGRAMACION <br> E <br> HISTORIA </h3>
+        </div>
+        <div id = "FooterLadoDerecho">
+            Sitio con fines educativos - Creado por M. Victoria López
+        </div>
+    </footer>
+    <script src = "./js/codigo.js"></script>
+</body>
+</html>
