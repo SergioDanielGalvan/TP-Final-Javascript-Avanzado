@@ -195,6 +195,11 @@ function iniciarRompecabezas() {
     CajaDestino1 = document.getElementById("caja1");
     CajaDestino2 = document.getElementById("caja2");
     CajaDestino3 = document.getElementById("caja3");
+
+    nodotexto( CajaDestino1 );
+    nodotexto( CajaDestino2 );
+    nodotexto( CajaDestino3 );
+    /*
     nodoj = CajaDestino1.querySelector("P");
     //if ( CajaDestino1.childNodes.length == 1 ) {
     if ( nodoj == null ) {
@@ -230,11 +235,17 @@ function iniciarRompecabezas() {
     if ( nodoj != null ) {
         nodoj.remove();
     }
+    */
 
     CajaOrigen1 = document.getElementById("img1");
     CajaOrigen2 = document.getElementById("img2");
     CajaOrigen3 = document.getElementById("img3");
 
+    cargarNodo( CajaOrigen1, "imagen1", "./imagenes/rompe2.png" );
+    cargarNodo( CajaOrigen2, "imagen2", "./imagenes/rompe1.png" );
+    cargarNodo( CajaOrigen3, "imagen3", "./imagenes/rompe3.png" );
+
+    /*
     CajaOrigen1.style.display = "";
     nodoj = CajaOrigen1.querySelector("img");
     //if ( CajaOrigen1.childNodes.length == 0 ) {
@@ -273,7 +284,35 @@ function iniciarRompecabezas() {
         nodoi.setAttribute("ondragstart", "dragImg( event )");
         CajaOrigen3.appendChild(nodoi);
     }
+    */
+}
 
+function cargarNodo( caja, idnombreimagen, urlimagen ) {
+    caja.style.display = "";
+    nodo1 = caja.querySelector("img");
+    if ( nodo1 == null ) {
+        nodo2 = document.createElement("img");
+        nodo2.setAttribute("id", idnombreimagen);
+        nodo2.setAttribute("src", urlimagen);
+        nodo2.setAttribute("alt", "imagen-rompecabezas");
+        nodo2.setAttribute("draggable", "true");
+        nodo2.setAttribute("ondragstart", "dragImg( event )");
+        caja.appendChild(nodo2);
+    }
+}
+
+function nodotexto( caja ) {
+    nodoj = caja.querySelector("P");
+    //if ( CajaDestino1.childNodes.length == 1 ) {
+    if ( nodoj == null ) {
+        nodop = document.createElement("p");
+        nodop.textContent = "Arrastre y suelte la imagen aquí";
+        caja.appendChild(nodop);
+    }
+    nodoj = caja.querySelector("img");
+    if ( nodoj != null ) {
+        nodoj.remove();
+    }
 }
 
 iniciarRompecabezas();
