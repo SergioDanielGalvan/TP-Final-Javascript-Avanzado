@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Proyecto-Final</title>
-</head>
+</head>57
 <body>
-    <nav id = "MenuTop" >
+    <nav id = "MenuTop" class = "displayFlex1" >
         <a id = "LogoInicio" onclick = "iniciarPrincipal( event )" >
             <svg width="200" height="80">
                 <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
@@ -36,33 +36,33 @@
             <section id = "Principal" >
                 <h2>CONTENIDO</h2>
                 <div id = "CardPrincipal">
-                    <div id = "IrHistoria" class = "cards" >
+                    <div id = "IrHistoria" class = "cards displayFlex1" >
                         <img class = "imagenPrincipal" src= "./imagenes/img1.jpg" alt = "historia de la programación">
                         <p class="desc-card">Conozcamos Un poco sobre la historia de la programación</p>
                         <button type="button" class = "botonPrincipal" onclick = "iniciarHistoria( event )" >Ir a Historia</button>
                     </div>
-                    <div id = "IrJuego" class = "cards" >
+                    <div id = "IrJuego" class = "cards displayFlex1" >
                         <img class = "imagenPrincipal" src = "./imagenes/img2.jpg" alt="Juguemos un poco">
                         <p class="desc-card">Juguemos un poco sobre la computación</p>
                         <button type="button" class = "botonPrincipal" onclick = "iniciarJuego( event )" >Ir a juego</button>
                     </div>
                 </div>    
             </section>
-            <div id = "CardHistoria" >
-                <div id = "parrafo1" class = "parrafos" >
+            <div id = "CardHistoria"  class = "displayFlex1" >
+                <div id = "parrafo1" class = "parrafos displayFlex1" >
                     <h2>El principio de la historia de la programación</h2>
                     <p>
                         El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage. El propósito de este algoritmo era calcular los números de Bernoulli. En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing. Church expresó el cálculo lambda de forma formulativa.
                     </p>
                 </div>
-                <div id = "parrafo2" class = "parrafos" >
+                <div id = "parrafo2" class = "parrafos displayFlex1" >
                     <p>
                         Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
                         Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.
                     </p>
                     <h2>Lenguaje de ensamblaje</h2>
                 </div>
-                <div id = "parrafo3" class = "parrafos" >
+                <div id = "parrafo3" class = "parrafos displayFlex1" >
                     <h2>Los primeros lenguajes de programación</h2>
                     <div >
                         <p>
@@ -89,8 +89,8 @@
                     <div id = "frameVideo">
                         <img id = "imagen-video" src = "./imagenes/img-video.jpg">
                         <video id = "medio" width="100%" muted="none">Su navegador no soporta el formato de video
-                            <source src = "./video/historia-Comp.mp4">
-                            <source src = "./video/historia-Comp.ogv">
+                            <source src = "./video/historia-Comp.mp4" type = "video/mp4" >
+                            <source src = "./video/historia-Comp.ogv" type = "video/ogv">
                         </video>
                     </div>
                     <nav id = "controlesVideo" >
@@ -103,7 +103,7 @@
                             <div id = "progreso">
                             </div>
                         </div>
-                        <div id = "controlyTiempo" " >
+                        <div id = "controlyTiempo" >
                             <div id = "tiempototal">
                                 Duracion video:
                             </div>
@@ -117,7 +117,7 @@
             <div id = "CardJuego">
                 <h2 id = "tituloJuego" class = "tituloSeccion" >Armemos el rompecabezas y veamos que imagen es ...</h2>
                 <div id = "Rompezabezas" >
-                    <div id = "cajas" >
+                    <div id = "cajas" class = "displayFlex1" >
                         <div id = "caja1" class = "caja" ondrop = "dropImg( event )" ondragover = "allowDropImg( event )" >
                         </div>
                         <div id = "caja2" class = "caja" ondrop = "dropImg( event )" ondragover = "allowDropImg( event )" >
@@ -141,12 +141,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class = "displayFlex1" >
         <div id = "FooterLadoIzquierdo">
             <img id = "Footerlogo" src="./imagenes/logo.png" alt = "Footerlogo">
             <h3 id = "titulo-pie">PROGRAMACION <br> E <br> HISTORIA </h3>
         </div>
-        <div id = "FooterLadoDerecho">
+        <div id = "FooterLadoDerecho" class = "displayFlex1" >
             Sitio con fines educativos - Creado por M. Victoria López
         </div>
     </footer>
